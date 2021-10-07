@@ -4,75 +4,132 @@
 }
 
 body {
-    background: url(/Images/messi-background3.jpg) no-repeat fixed center;
-    color: white;
+    background: url(https://free4kwallpapers.com/uploads/originals/2015/09/15/lionel-messi-2013.jpg) no-repeat fixed center;
 }
 
 #main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80%;
     margin: auto;
+    text-align: center;
 }
 
-#main .main-section {
+#main #img-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#main #img-div #image {
+    width: 100%;
+    opacity: 92%;
+}
+
+#main #img-div #img-caption {
+    display: none;
+}
+
+#main #title {
+    font-size: 300%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    margin-bottom: 50px;
+    font-family: "rock salt";
+    color: white;
+    padding: 0 10px;
+}
+
+#main .tribute-info {
     display: flex;
     flex-wrap: wrap;
-    text-align: center;
-    justify-content: center;
-    width: 100%;
+    justify-content: space-around;
+    width: 80%;
     padding: 15px 0;
 }
 
-.main-section > * {
-    margin: 9px;
+.tribute-info > * {
     flex-basis: 450px;
     background-color: rgba(0, 0, 0, 0.65);
     border-radius: 8px;
-    padding-bottom: 20px;
     font-size: 20px;
+    padding-bottom: 20px;
+    margin: 9px 0;
+    color: white;
 }
 
-.main-section h2 {
+.tribute-info h2 {
     color: rgb(255, 217, 0);
     margin-bottom: 15px;
-    font-size: 40px;
+    font-size: 45px;
     padding-top: 30px;
     padding-bottom: 10px;
+    font-family: 'Permanent Marker', Arial, Helvetica, sans-serif;
 }
 
-.main-section p {
+.tribute-info a {
+    color: rgb(255, 217, 0);
+    text-decoration: none;
+}
+
+.tribute-info a:hover {
+    color: rgb(0, 132, 255);
+    text-decoration: underline;
+}
+
+.tribute-info a:active {
+    color: rgb(0, 132, 255);
+    text-decoration: none;
+}
+
+.tribute-info p, ul {
     padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.main-section .legend-is-born img {
+.tribute-info .legend-is-born img {
     max-width: 90%;
+    margin: 10px 0;
 }
 
-.main-section .legend-begins img {
+.tribute-info .legend-begins figure {
+    margin: 10px 0;
+}
+
+.tribute-info .legend-begins img {
     max-width: 90%;
+    margin-bottom: 10px;
 }
 
-.main-section .legend-continues h3 {
-    font-size: 30px;
+.tribute-info .legend-forever h3 {
+    font-size: 25px;
     margin-bottom: 15px;
+    font-family: arvo, Arial, Helvetica, sans-serif;
 }
 
-@media(max-width: 500px) {
-    #main {
-        width: 98%;
-    }
+footer {
+    color: rgba(255, 255, 255, 0.95);
+    text-align: center;
+    font-size: 100px;
+    font-family: 'Permanent Marker', Impact, Haettenschweiler, sans-serif;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
 
-    .main-section > * {
-        margin: 8px 0;
+@media(max-width: 600px) {
+    #main .tribute-info {
+        width: 98%;
+        overflow: hidden;
     }
 
     p, ul, li {
         padding: 10px, 5px;
     }
-
-    .main-section .legend-continues {
-        margin-bottom: 60px;
+    
+    #main #title {
+        font-size: 160%;
     }
 }
