@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Favorite Phone Survey</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <!----------------     M A I N - C O N T A I N E R     ----------------->
+        <main class="main-container">
+            <h1 id="title">Favorite Phone Survey</h1>
+            <p id="description">Tell us about your smart phone experience!</p>
+            <!----------------     S U R V E Y - F O R M     ----------------->
+            <form id="survey-form">
+                <section class=name-container>
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" placeholder="Enter Name..." required>
+                </section>
+                <!----------------     A G E - C O N T A I N E R     ----------------->
+                <section class="age-container">
+                    <label for="number">Age:</label><br>
+                    <input type="text" id="number" name="age" placeholder="Enter Age..." required>
+                </section>
+                <!----------------     P H O N E - T Y P E     ----------------->
+                <p>What kind of phones have you used?</p>
+                <section class="phone-type">
+                    <div>
+                        <input type="checkbox" id="android" name="phone-type" value="android">
+                        <label for="android">Android</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="iphone" name="phone-type" value="iphone">
+                        <label for="iphone">iPhone</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="other" name="phone-type" value="other">
+                        <label for="other">Other</label>
+                    </div>
+                </section>
+                <!----------------     D A I L Y - P H O N E     ----------------->
+                <p>Which phone do you mainly use on a daily basis?</p>
+                <section class="daily-phone">
+                    <div>
+                        <input type="radio" id="android-daily" name="daily-phone" value="android">
+                        <label for="android-daily">Android</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="iphone-daily" name="daily-phone" value="iphone">
+                        <label for="iphone-daily">iPhone</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="other-daily" name="daily-phone" value="other">
+                        <label for="other-daily">Other</label>
+                    </div>
+                </section>
+                <!----------------     P H O N E - Y E A R S     ----------------->
+                <section>
+                    <label for="dropdown" name="years">For how many years have you had your current phone?</label><br>
+                    <select id="dropdown" name="years" required>
+                        <option value="-1">< 1 year</option>
+                        <option value="1-2">1-2 years</option>
+                        <option value="3-4">3-4 years</option>
+                        <option value="5+">5+ years</option>
+                    </select>
+                </section>
+                <!----------------     C O M M E N T S     ----------------->
+                <section>
+                    <label for="comments">Please provide any aditional comments. (Optional)</label><br>
+                    <textarea id="comments" name="comments" placeholder="Comments..."></textarea>
+                </section>
+            </form>
+        </main>
+    </body>
+</html>

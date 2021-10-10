@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #181818;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    min-width: 500px;
+    margin: auto;
+    border: thin solid black;
+    font-size: 1em;
+    background-color: lightcoral;
+}
+
+.main-container #title {
+    margin-top: 50px;
+    font-size: 3.2em;
+}
+
+.main-container #description {
+    padding: 10px 0;
+    font-size: 1.5em;
+}
+
+.main-container #survey-form {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0 50px 0;
+    border: thin dashed blue;
+    width: 90%;
+    background-color: white;
+    padding: 30px 0;
+}
+
+.main-container #survey-form > * {
+    font-size: 30px;
+    width: 80%;
+    margin: auto;
+}
+
+.main-container #survey-form .name-container, #survey-form .age-container {
+    margin-bottom: 30px;
+}
+
+.name-container input, .age-container input {
+    width: 99%;
+    font-size: 25px;
+    margin-top: 5px;
+    padding-left: 1%;
+}
+
+.name-container #name, #number {
+    height: 40px;
+}
+
+.main-container #survey-form .phone-type, #survey-form .daily-phone {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.main-container #survey-form .daily-phone, #survey-form .phone-type {
+    margin-top: 8px;
+}
+
+.main-container #survey-form .phone-type div, #survey-form .daily-phone div {
+    margin: 2px 0;
+    font-size: 25px;
+}
+
+.main-container #survey-form .phone-type label, .daily-phone label {
+    padding: 0 20px 0 4px;
+}
+
+.main-container #survey-form #dropdown {
+    margin: 8px 0 30px 0;
+    width: 99%;
+    font-size: 0.8em;
+    height: 40px;
+    padding-left: 1%;
+}
+
+.main-container #survey-form #comments {
+    margin: 8px 0 15px 0;
+    height: 240px;
+    width: 96%;
+    font-size: 0.8em;
+    padding: 10px 2%;
+}
