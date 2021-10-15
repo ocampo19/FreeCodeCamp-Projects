@@ -12,13 +12,18 @@
             <!----------------     S U R V E Y - F O R M     ----------------->
             <form id="survey-form">
                 <section class=name-container>
-                    <label for="name">Name:</label><br>
+                    <label for="name" id="name-label">Name:</label><br>
                     <input type="text" id="name" name="name" placeholder="Enter Name..." required>
+                </section>
+                <!----------------     E M A I L - C O N T A I N E R     ----------------->
+                <section class="email-container">
+                    <label for="email" id="email-label">Email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="Enter Email..." required>
                 </section>
                 <!----------------     A G E - C O N T A I N E R     ----------------->
                 <section class="age-container">
-                    <label for="number">Age:</label><br>
-                    <input type="text" id="number" name="age" placeholder="Enter Age..." required>
+                    <label for="number" id="number-label">Age:</label><br>
+                    <input type="number" id="number" min="5" max="105" name="age" placeholder="Enter Age..." required>
                 </section>
                 <!----------------     P H O N E - T Y P E     ----------------->
                 <p>What kind of phones have you used?</p>
@@ -52,7 +57,7 @@
                         <label for="other-daily">Other</label>
                     </div>
                 </section>
-                <!----------------     P H O N E - Y E A R S     ----------------->
+                <!----------------     D R O P - D O W N    ----------------->
                 <section>
                     <label for="dropdown" name="years">For how many years have you had your current phone?</label><br>
                     <select id="dropdown" name="years" required>
@@ -67,6 +72,9 @@
                     <label for="comments">Please provide any aditional comments. (Optional)</label><br>
                     <textarea id="comments" name="comments" placeholder="Comments..."></textarea>
                 </section>
+
+                <input id="submit" type="submit" value="Submit">
+
             </form>
         </main>
     </body>

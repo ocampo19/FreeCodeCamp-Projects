@@ -1,42 +1,46 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    background-color: #181818;
+    background: url(/Images/background-1.jpg) no-repeat fixed center;
+    background-size: cover;
 }
 
 .main-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50%;
     min-width: 500px;
-    margin: auto;
-    border: thin solid black;
+    width: 45%;
+    padding-left: 40px;
     font-size: 1em;
-    background-color: lightcoral;
 }
 
 .main-container #title {
     margin-top: 50px;
     font-size: 3.2em;
+    text-align: center;
+    color: white;
 }
 
 .main-container #description {
     padding: 10px 0;
     font-size: 1.5em;
+    color: white;
 }
 
 .main-container #survey-form {
     display: flex;
     flex-direction: column;
-    margin: 30px 0 50px 0;
-    border: thin dashed blue;
-    width: 90%;
-    background-color: white;
-    padding: 30px 0;
+    margin: 30px 0px 50px 0px;
+    width: 100%;
+    min-width: 460px;
+    padding: 60px 0;
+    border-radius: 5px;
+    background-color: rgba(245, 245, 245, 0.55);
 }
 
 .main-container #survey-form > * {
@@ -45,52 +49,66 @@ body {
     margin: auto;
 }
 
-.main-container #survey-form .name-container, #survey-form .age-container {
+.main-container #survey-form .name-container, 
+.main-container #survey-form .age-container, 
+.main-container #survey-form .email-container {
     margin-bottom: 30px;
 }
 
-.name-container input, .age-container input {
-    width: 99%;
+#survey-form .name-container input, 
+#survey-form .age-container input, 
+#survey-form .email-container input {
+    width: 100%;
     font-size: 25px;
     margin-top: 5px;
-    padding-left: 1%;
+    padding-left: 15px;
+    border-radius: 5px;
 }
 
-.name-container #name, #number {
-    height: 40px;
+#survey-form .name-container #name, #number, #email {
+    height: 50px;
 }
 
-.main-container #survey-form .phone-type, #survey-form .daily-phone {
+#survey-form .phone-type, 
+#survey-form .daily-phone {
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
-}
-
-.main-container #survey-form .daily-phone, #survey-form .phone-type {
     margin-top: 8px;
 }
 
-.main-container #survey-form .phone-type div, #survey-form .daily-phone div {
+#survey-form .phone-type div, 
+#survey-form .daily-phone div {
     margin: 2px 0;
     font-size: 25px;
 }
 
-.main-container #survey-form .phone-type label, .daily-phone label {
-    padding: 0 20px 0 4px;
+#survey-form .phone-type label, 
+#survye-form .daily-phone label {
+    padding-left: 5px;
 }
 
-.main-container #survey-form #dropdown {
+#survey-form #dropdown {
     margin: 8px 0 30px 0;
-    width: 99%;
+    width: 100%;
     font-size: 0.8em;
-    height: 40px;
-    padding-left: 1%;
+    height: 50px;
+    padding-left: 15px;
+    border-radius: 5px;
 }
 
-.main-container #survey-form #comments {
-    margin: 8px 0 15px 0;
+#survey-form #comments {
+    margin-top: 8px;
+    padding: 15px 0 0 15px;
     height: 240px;
-    width: 96%;
+    width: 100%;
     font-size: 0.8em;
-    padding: 10px 2%;
+    border-radius: 5px;
+}
+
+#survey-form #submit {
+    padding: 18px 0;
+    width: 80%;
+    margin: 30px auto 0 auto;
+    border-radius: 5px;
 }
