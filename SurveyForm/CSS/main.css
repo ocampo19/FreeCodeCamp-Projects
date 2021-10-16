@@ -14,7 +14,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-width: 460px;
     width: 790px;
     font-size: 1em;
     margin-left: 100px;
