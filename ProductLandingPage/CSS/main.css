@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111111;
+    font-size: 1em;
+    color: white;
+}
+
+#header {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    background-color: #111111;
+}
+
+#header .nav-bar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 55%;
+    margin: auto;
+}
+
+#header .nav-bar .nav-link {
+    text-decoration: none;
+    color: white;
+    font-size: 2.2em;
+    transition: 0.3s;
+}
+
+#header .nav-bar .nav-link:hover {
+    color: #D3A180;
+}
+
+#header .nav-bar #header-img {
+    width: 110px;
+    padding: 20px 0 5px 0;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container .our-coffee {
+    background: url("/Images/background-3.png") no-repeat;
+    background-size: cover;
+    height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-container .our-coffee div {
+    font-family: 'crimson text', serif;
+    margin-left: 140px;
+    width: 680px;
+}
+
+.main-container .our-coffee h2 {
+    font-weight: 700;
+    font-size: 7em;
+    text-shadow: 8px 2px 10px #000000;
+}
+
+.main-container .our-coffee p {
+    font-size: 2.3em;
+    font-style: italic;
+    line-height: 45px;
+    margin: 15px 0;
+    text-shadow: 2px 2px 8px #000000;
+}
+
+.main-container .our-coffee a {
+    font-size: 2.3em;
+    font-weight: bold;
+    width: fit-content;
+    display: block;
+    margin-top: 55px;
+    padding: 18px 20px;
+    border-radius: 6px;
+    box-shadow: 4px 4px 8px #000000;
+    background-color: #0198FF;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.main-container .our-coffee a:hover {
+    font-size: 2.38em;
+    background-color: #2F6509;
+    box-shadow: 6px 6px 8px #000000;
+}
+
+@media(max-width: 1600px) {
+    #header .nav-bar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 83%;
+    margin: auto;
+    }
+}
+
+@media(max-width: 1024px) {
+    #header .nav-bar {
+    width: 95%;
+    }
+}
+
+@media(max-width: 500px) {
+    #header .nav-bar {
+    width: 100%;
+    }
+
+    #header .nav-bar .nav-link {
+        font-size: 1.2em;
+    }
+
+    #header .nav-bar #header-img {
+        width: 60px;
+    }
+}
