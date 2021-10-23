@@ -116,14 +116,38 @@ body {
 
 @media(max-width: 500px) {
     #header .nav-bar {
-    width: 100%;
+    width: 98%;
     }
 
     #header .nav-bar .nav-link {
-        font-size: 1.2em;
+        font-size: 0.7em;
     }
 
     #header .nav-bar #header-img {
-        width: 60px;
+        width: 40px;
+    }
+
+    .main-container .our-coffee div {
+        margin-left: 20px;
+        width: 480px;
+    }
+    
+    .main-container .our-coffee h2 {
+        font-weight: 700;
+        font-size: 2em;
+    }
+    
+    .main-container .our-coffee p {
+        font-size: 1em;
+        margin: 15px 0;
+    }
+    
+    .main-container .our-coffee a {
+        font-size: 1.8em;
+        margin-top: 55px;
+    }
+    
+    .main-container .our-coffee a:hover {
+        font-size: 1.95em;
     }
 }
