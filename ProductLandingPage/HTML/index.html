@@ -12,35 +12,62 @@
         <header id="header">
             <nav class="nav-bar">
                 <a class="nav-link" href="#" alt="logo"><img id="header-img" src="../Images/logo-3.png"></a>
-                <a href="#Shop" class="nav-link">Shop</a>
-                <a href="#Reviews" class="nav-link">Reviews</a>
-                <a href="#Offers" class="nav-link">Special Offers</a>
+                <a href="#shop" class="nav-link">Shop</a>
+                <a href="#reviews" class="nav-link">Reviews</a>
+                <a href="#offers" class="nav-link">Offers</a>
             </nav>
         </header>
         <main class="main-container">
             <section id="our-coffee">
                 <!--<div>-->
-                    <h2>Cozy Coffee</h2>
+                    <h1>Cozy Coffee</h1>
                     <p>Slowly ease into your morning and have a relaxing day with Cozy Coffee. Fresh, premium, great tasting coffee.</p>
-                    <a href="#shop">Shop Now</a>
+                    <a id="shop-button" href="#shop">Shop Now</a>
                 <!--</div>-->
             </section>
-            <section class="shop">
-                <h2>Shop</h2>
-                <p>description...</p>
+            <section id="shop">
+                <h2>Enjoy high quality coffee at work and at home</h2>
+                <div class=product-container>
+                    <div class="products">
+                        <h3>Roasted Whole Coffee Beans</h3>
+                        <p>Lorem ipsum. Lorem ipsum. Lorem ipsum dolor. Lorem ipsum.</p>
+                    </div>
+                    <div class="products">
+                        <h3>Ground Coffee</h3>
+                        <p>Lorem ipsum. Lorem ipsum. Lorem ipsum dolor. Lorem ipsum.</p>
+                    </div>
+                    <div class="products">
+                        <h3>Instant Coffee</h3>
+                        <p>Lorem ipsum. Lorem ipsum. Lorem ipsum dolor. Lorem ipsum.</p>
+                    </div>
+                </div>
             </section>
-            <section class="Reviews">
+            <hr style="width: 85%; opacity: 0.3;">
+            <section id="reviews">
                 <h2>Reviews</h2>
-                <div class="review">Review 1</div>
-                <div class="review">Review 2</div>
-                <div class="review">Review 3</div>
+                <div class="review-container">
+                    <div class="review">
+                        <h3>John Doe</h3>
+                        <p>Lorem ipsum. Lorem ipsum. Lorem ipsum dolor. Lorem ipsum.</p>
+                    </div>
+                    <div class="review">
+                        <h3>Mary Perez</h3>
+                        <p>Lorem ipsum. Lorem ipsum. Lorem ipsum dolor. Lorem ipsum.</p>
+                    </div>
+                    <div class="review">
+                        <h3>Moe Tsubasa</h3>
+                        <p>Lorem ipsum. Lorem ipsum. Lorem ipsum dolor. Lorem ipsum.</p>
+                    </div>
+                </div>
             </section>
-            <section>
+            <section id="offers">
                 <h2>Sign up with your E-mail to receive special offers!</h2>
                 <form id="form">
-                    <label for="email" id="email-label">Email</label><br>
-                    <input type="email" id="email" name="email" placeholder="Your email">
-                    <input id="submit" type="submit" value="Submit">
+                    <label for="email" id="email-label"></label>
+                    <br>
+                    <input type="email" id="email" name="email" placeholder="Enter your email">
+                    <br>
+                    <input id="submit" type="submit" value="Sign Up">
                 </form>
             </section>
         </main>
