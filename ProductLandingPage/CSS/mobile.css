@@ -141,6 +141,8 @@ body {
     margin-top: 3.5rem;
     margin-bottom: 0.5rem;
     line-height: 3rem;
+    color: var(--clr-coffee-brown);
+    text-shadow: 2px 1px 1px #985c34;
 }
 
 .main-container #shop .product-container {
@@ -160,6 +162,20 @@ body {
 
 .main-container #shop .product-container .products h3 {
     font-size: 1.5rem;
+}
+
+.main-container #shop .product-container .products p {
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+#shop .product-container .products .buy-now-button {
+    padding: 1rem 1.5rem;
+    margin: 1rem 0;
+    border: none;
+    color: var(--clr-off-white);
+    background-color: var(--clr-coffee-brown);
+    font-size: 1rem;
 }
 
 .main-container #reviews {
