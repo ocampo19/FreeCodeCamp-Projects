@@ -43,7 +43,7 @@ body {
     text-align: center;
     color: var(--clr-off-white);
     transition: 0.3s;
-    padding: 0.5rem;
+    padding: 0.8rem 0.5rem;
 }
 
 .nav-bar .nav-link:hover {
@@ -55,7 +55,7 @@ body {
 }
 
 .nav-bar .nav-link #header-img {
-    width: 4rem;
+    width: 3.5rem;
     height: auto;
 }
 
@@ -314,6 +314,16 @@ body {
     .nav-bar {
         width: 50%;
         margin: auto;
+        padding: 0.15rem 0;
+    }
+
+    .nav-bar .nav-link #header-img {
+        width: 2rem;
+    }
+
+    .nav-bar .nav-link {
+        padding: 0 0.5rem;
+        font-size: 1;
     }
 
     .main-container #our-coffee {
