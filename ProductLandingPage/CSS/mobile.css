@@ -6,7 +6,9 @@
     --clr-leaf-green: #194003;
     --clr-off-white: #fefefe;
 
-    --ff-primary: 'crimson text', serif;
+    --ff-sub-heading: 'Gudea', sans-serif;
+    --ff-sub-heading2: 'Crimson Text', serif;
+    --ff-paragraph: 'Marcellus', serif;
     font-size: 16px;
 }
 * {
@@ -20,7 +22,7 @@ body {
 }
 
 #header {
-    background-color: #090909;
+    background-color: black;
     position: fixed;
     width: 100%;
     z-index: 1;
@@ -31,12 +33,12 @@ body {
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
-    font-family:serif,'crimson teext'
+    font-family: var(--ff-sub-heading);
 }
 
 .nav-bar .nav-link {
     display: block;
-    font-size: 1.3rem;
+    font-size: 1rem;
     text-decoration: none;
     text-align: center;
     color: var(--clr-off-white);
@@ -49,7 +51,7 @@ body {
 }
 
 .nav-bar > :first-child {
-    padding: 0.25rem 0.5rem;
+    padding: 0rem 0.5rem;
 }
 
 .nav-bar .nav-link #header-img {
@@ -64,39 +66,39 @@ body {
 }
 
 .main-container > * {
-    font-family: var(--ff-primary);
     color: var(--clr-off-white);
 }
 
 .main-container #our-coffee {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     height: 100vh;
-    padding: 3.5rem 0.6rem;
     background: url("../Images/mobile-background.png") no-repeat;
     background-size: cover;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-/*.main-container #our-coffee div {
+.main-container #our-coffee #our-coffee-div {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-}*/
+    height: fit-content;
+}
 
 .main-container #our-coffee h1 {
+    font-family: 'Roboto', sans-serif;
     font-size: 4.5rem;
     font-weight: 700;
     text-shadow: 4px 2px 4px #000000;
     line-height: 6rem;
+    width: 100%;
 }
 
 .main-container #our-coffee p {
-    font-size: 2rem;
+    font-family: var(--ff-paragraph);
+    font-size: 1.5rem;
     font-weight: 400;
     font-style: italic;
     text-shadow: 8px 2px 10px #000000;
@@ -105,24 +107,40 @@ body {
 
 .main-container #our-coffee #shop-button {
     display: block;
-    font-size: 1.5rem;
-    font-family: var(--ff-primary);
+    font-size: 1rem;
+    font-family: var(--ff-sub-heading);
     font-weight: bold;
     width: fit-content;
     text-decoration: none;
     background-color: var(--clr-cozy-blue);
-    padding: 1.2rem 2.5rem;
+    padding: 1rem 2rem;
     color: var(--clr-off-white);
-    border-radius: 10px;
-    margin-top: 1.5rem;
-    box-shadow: 4px 4px 8px #000000;
-    transition: ease-in 0.2s;
+    border-radius: 8px;
+    margin-top: 1rem;
+    box-shadow: 2px 2px 2px #000000;
+    transition: ease-in 0.3s;
 }
 
 .main-container #our-coffee #shop-button:hover {
     background-color: var(--clr-leaf-green);
-    font-size: 1.57rem;
-    box-shadow: 6px 6px 8px #000000;
+    font-size: 1.05rem;
+    box-shadow: 4px 3px 4px #000000;
+}
+
+.main-container #video-container {
+    /*max-width: 100%;*/
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.main-container #video-container #video {
+    display: block;
+    max-width: 100%;
 }
  
 .main-container #shop {
@@ -131,15 +149,15 @@ body {
     align-items: center;
     width: 90%;
     text-align: center;
-    /*margin: 1.5rem 0;*/
-    margin-bottom: 2rem;
+    padding-bottom: 3.5rem;
 }
 
 .main-container #shop h2 {
+    font-family: var(--ff-sub-heading);
     font-size: 2rem;
     font-weight: 600;
     margin-top: 3.5rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 3rem;
     line-height: 3rem;
     color: var(--clr-coffee-brown);
     text-shadow: 2px 1px 1px #985c34;
@@ -148,46 +166,60 @@ body {
 .main-container #shop .product-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    gap: 3rem;
     width: 100%;
 }
 
 .main-container #shop .product-container .products {
     border: thin solid var(--clr-coffee-brown);
     padding: 1rem;
-    margin: 1.5rem 0;
-    width: fit-content;
-    max-width: 100%;
+    flex-basis: 100%;
+    background-color: #0a0a0a;
 }
 
 .main-container #shop .product-container .products h3 {
+    font-family: var(--ff-sub-heading2);
     font-size: 1.5rem;
 }
 
 .main-container #shop .product-container .products p {
-    font-size: 1rem;
+    font-family: var(--ff-paragraph);
+    font-size: 0.9rem;
     margin-top: 1rem;
 }
 
 #shop .product-container .products .buy-now-button {
     padding: 1rem 1.5rem;
-    margin: 1rem 0;
+    margin-top: 2rem;
     border: none;
     color: var(--clr-off-white);
+    background-color: #c48154;
+    font-size: 0.9rem;
+    font-family: var(--ff-sub-heading);
+    transition: 0.3s;
+}
+
+#shop .product-container .products .buy-now-button:hover {
+    font-size: 0.65rem;
     background-color: var(--clr-coffee-brown);
-    font-size: 1rem;
 }
 
 .main-container #reviews {
     margin: 2rem 0;
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 90%;
+    padding-bottom: 2.5rem;
 }
 
 .main-container #reviews h2 {
+    font-family: var(--ff-sub-heading);
     font-size: 2.5rem;
     text-align: center;
+    padding-top: 3.2rem;
+    margin-bottom: 1rem;
 }
 
 .main-container #reviews .review-container {
@@ -195,23 +227,31 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    gap: 3rem;
     width: 100%;
 }
 
 .main-container #reviews .review-container .review {
     padding: 1rem;
-    margin: 0.5rem 0;
-    width: fit-content;
-    max-width: 100%;
+    flex-basis: 100%;
     background-color: var(--clr-cozy-blue);
 }
 
 .main-container #reviews .review-container .review h3 {
-    font-size: 1.1rem;
+    font-family: var(--ff-sub-heading);
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.main-container #reviews .review-container .review p {
+    font-family: var(--ff-paragraph);
+    font-size: 0.9rem;
+    padding-bottom: 1rem;
+    text-align: center;
 }
 
 .main-container #offers {
-    background-color: var(--clr-leaf-green);
     background: url("../Images/offers-background-mobile.jpg") no-repeat;
     background-size: cover;
     display: flex;
@@ -224,10 +264,11 @@ body {
 }
 
 .main-container #offers h2 {
-    font-size: 2rem;
+    font-family: var(--ff-sub-heading);
+    font-size: 2.2rem;
     line-height: 2.5rem;
     text-shadow: 2px 2px 2px #000000;
-    margin-bottom: 1.5rem;
+    margin: 1.5rem 0;
 }
 
 .main-container #offers #form {
@@ -235,19 +276,21 @@ body {
 }
 
 .main-container #offers #form #email {
-    font-size: 1.5rem;
-    height: 3rem;
+    font-size: 1.2rem;
+    height: 2.5rem;
+    min-width: 50%;
     max-width: 100%;
-    padding: 4px;
+    padding: 2px 4px;
     border: none;
+    border-radius: 5px;
     box-shadow: 2px 2px 2px #000000;
 }
 
 .main-container #offers #form #submit {
-    font-size: 1.5rem;
+    font-family: var(--ff-sub-heading);
+    font-size: 1rem;
     font-weight: bold;
-    margin-top: 4rem;
-    margin-bottom: 1rem;
+    margin: 2rem 0;
     padding: 1rem 2rem;
     border: none;
     border-radius: 8px;
@@ -259,6 +302,79 @@ body {
 
 .main-container #offers #form #submit:hover {
     background-color: var(--clr-leaf-green);
-    font-size: 1.58rem;
+    font-size: 1.05rem;
     box-shadow: 4px 3px 4px #000000;
 }
+
+@media only screen and (min-width: 1565px) {
+    :root {
+        font-size: 27px;
+    }
+
+    .nav-bar {
+        width: 50%;
+        margin: auto;
+    }
+
+    .main-container #our-coffee {
+        background: url(/Images/background-2000.png) no-repeat;
+        background-size: cover;
+        display: block;
+    }
+
+    .main-container #our-coffee #our-coffee-div {
+        width: 50%;
+        padding: 7.5rem 0 0 7%;
+        text-align: left;
+    }
+
+    .main-container #our-coffee #our-coffee-div #shop-button {
+        position: relative;
+        left: -34%;
+    }
+
+    .main-container #video-container #video {
+        width: 1100px;
+        height: 618px;
+    }
+
+    .main-container #shop {
+        width: 65%;
+    }
+
+    .main-container #shop .product-container {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        gap: 1.5rem;
+    }
+
+    @media only screen and (min-width: 1707px) {
+        .main-container #shop .product-container :first-child h3 {
+            font-size: 1.2rem;
+            padding-top: 0.5rem;
+        }
+    }
+
+    .main-container #reviews {
+        width: 65%;
+    }
+
+    .main-container #reviews .review-container {
+        padding: 1rem 0;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        gap: 1.5rem;
+    }
+    
+    .main-container #offers {
+        background: url("../Images/offers-background.jpg") no-repeat;
+        background-size: cover;
+    }
+
+    .main-container #offers h2 {
+        width: 50%;
+    }
+}
+

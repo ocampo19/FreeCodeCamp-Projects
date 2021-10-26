@@ -7,6 +7,11 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gudea:ital@0;1&family=Marcellus&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+
     </head>
     <body>
         <header id="header">
@@ -19,17 +24,22 @@
         </header>
         <main class="main-container">
             <section id="our-coffee">
-                <!--<div>-->
+                <div id="our-coffee-div">
                     <h1>Cozy Coffee</h1>
                     <p>Slowly ease into your morning and have a relaxing day with Cozy Coffee. Fresh, premium, great tasting coffee.</p>
                     <a id="shop-button" href="#shop">Shop Now</a>
-                <!--</div>-->
+                </div>
+            </section>
+            <section id="video-container">
+                <iframe width="720" height="405" id="video"
+                src="https://www.youtube.com/embed/z_vjmRdF0e4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
             </section>
             <section id="shop">
                 <h2>Enjoy high quality coffee at work and at home</h2>
                 <div class=product-container>
                     <div class="products">
-                        <h3>Roasted Whole Coffee Beans</h3>
+                        <h3>Roasted Coffee Beans</h3>
                         <p>Lorem ipsum. Lorem ipsum. Lorem ipsum dolor. Lorem ipsum.</p>
                         <button class="buy-now-button">Buy Now</button>
                     </div>
@@ -51,21 +61,21 @@
                 <div class="review-container">
                     <div class="review">
                         <h3>John Doe</h3>
-                        <p>Lorem ipsum. Lorem ipsum. Lorem ipsum dolor. Lorem ipsum.</p>
+                        <p>Lorem ipsum. Lorem ipsum. Lorem ipsum dolor. Lorem ipsum. Lorem ipsum dolor. Lorem ipsum.</p>
                     </div>
                     <div class="review">
                         <h3>Mary Perez</h3>
-                        <p>Lorem ipsum. Lorem ipsum. Lorem ipsum dolor. Lorem ipsum.</p>
+                        <p>Lorem ipsum. Lorem ipsum. Lorem ipsum dolor. Lorem ipsum. Lorem ipsum. Lorem ipsum dolor. Lorem ipsum. Lorem ipsum.</p>
                     </div>
                     <div class="review">
-                        <h3>Moe Tsubasa</h3>
-                        <p>Lorem ipsum. Lorem ipsum. Lorem ipsum dolor. Lorem ipsum.</p>
+                        <h3>Hinata Hyuga</h3>
+                        <p>Lorem ipsum. Lorem ipsum. Lorem ipsum dolor.</p>
                     </div>
                 </div>
             </section>
             <section id="offers">
-                <h2>Sign up with your E-mail to receive special offers!</h2>
-                <form id="form">
+                <h2>Enter your email to receive special offers!</h2>
+                <form id="form" action="https://www.freecodecamp.com/email-submit" target="_blank">
                     <label for="email" id="email-label"></label>
                     <br>
                     <input type="email" id="email" name="email" placeholder="Enter your email">
