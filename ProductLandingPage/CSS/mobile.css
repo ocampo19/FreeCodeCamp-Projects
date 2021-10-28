@@ -87,7 +87,7 @@ body {
     text-align: center;
 }
 
-.main-container #our-coffee h1 {
+.main-container #our-coffee #title {
     font-family: 'Roboto', sans-serif;
     font-size: 4.5rem;
     font-weight: 700;
@@ -374,7 +374,7 @@ footer .sources-container .source:hover {
         text-align: left;
     }
 
-    .main-container #our-coffee #our-coffee-div h1 {
+    .main-container #our-coffee #our-coffee-div #title {
         min-width: 816px;
     }
 
