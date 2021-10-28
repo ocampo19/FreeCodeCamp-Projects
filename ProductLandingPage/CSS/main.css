@@ -1,3 +1,16 @@
+:root {
+    --clr-background: #111111;
+    --clr-incognito-gray: #252525;
+    --clr-coffee-brown: #D3A180;
+    --clr-cozy-blue: #0C87E2;
+    --clr-leaf-green: #194003;
+    --clr-off-white: #fefefe;
+
+    --ff-sub-heading: 'Gudea', sans-serif;
+    --ff-sub-heading2: 'Crimson Text', serif;
+    --ff-paragraph: 'Marcellus', serif;
+    font-size: 16px;
+}
 * {
     margin: 0;
     padding: 0;
@@ -5,149 +18,438 @@
 }
 
 body {
-    background-color: #111111;
-    font-size: 1em;
-    color: white;
+    background-color: var(--clr-background);
 }
 
 #header {
-    display: flex;
+    background-color: black;
+    position: fixed;
     width: 100%;
-    position: absolute;
-    background-color: #111111;
+    z-index: 1;
 }
 
-#header .nav-bar {
+.nav-bar {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 55%;
-    margin: auto;
+    width: 100%;
+    font-family: var(--ff-sub-heading);
 }
 
-#header .nav-bar .nav-link {
+.nav-bar .nav-link {
+    display: block;
+    font-size: 1rem;
     text-decoration: none;
-    color: white;
-    font-size: 2.2em;
+    text-align: center;
+    color: var(--clr-off-white);
     transition: 0.3s;
+    padding: 0.8rem 0.5rem;
 }
 
-#header .nav-bar .nav-link:hover {
-    color: #D3A180;
+.nav-bar .nav-link:hover {
+    color: var(--clr-coffee-brown);
 }
 
-#header .nav-bar #header-img {
-    width: 110px;
-    padding: 20px 0 5px 0;
+.nav-bar > :first-child {
+    padding: 0rem 0.5rem;
+}
+
+.nav-bar .nav-link #header-img {
+    width: 3.5rem;
+    height: auto;
 }
 
 .main-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
-.main-container .our-coffee {
-    background: url("/Images/background-3.png") no-repeat;
-    background-size: cover;
+.main-container > * {
+    color: var(--clr-off-white);
+}
+
+.main-container #our-coffee {
+    width: 100%;
     height: 100vh;
-    max-height: 100vh;
-    overflow: hidden;
+    background: url("../Images/mobile-background.png") no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.main-container .our-coffee div {
-    font-family: 'crimson text', serif;
-    margin-left: 140px;
-    width: 680px;
+.main-container #our-coffee #our-coffee-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
-.main-container .our-coffee h2 {
+.main-container #our-coffee h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 4.5rem;
     font-weight: 700;
-    font-size: 7em;
-    text-shadow: 8px 2px 10px #000000;
+    text-shadow: 4px 2px 4px #000000;
+    line-height: 5.5rem;
+    width: 100%;
 }
 
-.main-container .our-coffee p {
-    font-size: 2.3em;
+.main-container #our-coffee p {
+    font-family: var(--ff-paragraph);
+    font-size: 1.2rem;
+    font-weight: 400;
     font-style: italic;
-    line-height: 45px;
-    margin: 15px 0;
-    text-shadow: 2px 2px 8px #000000;
+    text-shadow: 8px 2px 10px #000000;
+    margin: 1.5rem 0 2rem 0;
+    width: 85%;
+    max-width: 550px;
 }
 
-.main-container .our-coffee a {
-    font-size: 2.3em;
+.main-container #our-coffee #shop-button {
+    display: block;
+    font-size: 1rem;
+    font-family: var(--ff-sub-heading);
     font-weight: bold;
     width: fit-content;
-    display: block;
-    margin-top: 55px;
-    padding: 18px 20px;
-    border-radius: 6px;
-    box-shadow: 4px 4px 8px #000000;
-    background-color: #0198FF;
     text-decoration: none;
-    color: white;
+    background-color: var(--clr-cozy-blue);
+    padding: 1rem 2rem;
+    color: var(--clr-off-white);
+    border-radius: 8px;
+    margin-top: 1rem;
+    box-shadow: 2px 2px 2px #000000;
     transition: 0.3s;
 }
 
-.main-container .our-coffee a:hover {
-    font-size: 2.38em;
-    background-color: #2F6509;
-    box-shadow: 6px 6px 8px #000000;
+.main-container #our-coffee #shop-button:hover {
+    background-color: var(--clr-leaf-green);
+    font-size: 1.05rem;
+    box-shadow: 4px 3px 4px #000000;
 }
 
-@media(max-width: 1600px) {
-    #header .nav-bar {
+.main-container #video-container {
+    /*max-width: 100%;*/
+    background-color: black;
+    height: 100vh;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    width: 83%;
+    width: 100%;
+}
+
+.main-container #video-container #video {
+    display: block;
+    max-width: 100%;
+}
+ 
+.main-container #shop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    text-align: center;
+    padding-bottom: 3.5rem;
+}
+
+.main-container #shop h2 {
+    font-family: var(--ff-sub-heading);
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 3.5rem;
+    margin-bottom: 3rem;
+    line-height: 3rem;
+    color: var(--clr-coffee-brown);
+    text-shadow: 2px 1px 1px #985c34;
+}
+
+.main-container #shop .product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 3rem;
+    width: 100%;
+    max-width: 595px;
+}
+
+.main-container #shop .product-container .products {
+    border: thin solid var(--clr-coffee-brown);
+    padding: 1rem;
+    flex-basis: 100%;
+    background-color: #0a0a0a;
+}
+
+.main-container #shop .product-container .products h3 {
+    font-family: var(--ff-sub-heading2);
+    font-size: 1.5rem;
+}
+
+.main-container #shop .product-container .products p {
+    font-family: var(--ff-paragraph);
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
+
+#shop .product-container .products .buy-now-button {
+    padding: 1rem 1.5rem;
+    margin-top: 2rem;
+    border: none;
+    color: var(--clr-off-white);
+    background-color: #c48154;
+    font-size: 0.9rem;
+    font-family: var(--ff-sub-heading);
+    transition: 0.3s;
+}
+
+#shop .product-container .products .buy-now-button:hover {
+    font-size: 0.95rem;
+    background-color: var(--clr-coffee-brown);
+}
+
+.main-container #reviews {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    padding-bottom: 2.5rem;
+}
+
+.main-container #reviews h2 {
+    font-family: var(--ff-sub-heading);
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 3.2rem;
+    margin-bottom: 2rem;
+}
+
+.main-container #reviews .review-container {
+    padding: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 3rem;
+    width: 100%;
+    max-width: 595px;
+}
+
+.main-container #reviews .review-container .review {
+    padding: 1rem;
+    flex-basis: 100%;
+    background-color: var(--clr-cozy-blue);
+}
+
+.main-container #reviews .review-container .review h3 {
+    font-family: var(--ff-sub-heading);
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.main-container #reviews .review-container .review p {
+    font-family: var(--ff-paragraph);
+    font-size: 0.9rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.main-container #offers {
+    background: url("../Images/offers-background-mobile-dark.jpg") no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 5%;
+    text-align: center;
+    width: 100%;
+}
+
+.main-container #offers h2 {
+    font-family: var(--ff-sub-heading);
+    /*font-size: 2.2rem;*/
+    font-size: 1.8rem;
+    width: 90%;
+    line-height: 2.5rem;
+    text-shadow: 2px 2px 2px #000000;
+    margin: 1.5rem 0;
+}
+
+.main-container #offers #form {
+    width: 90%;
+}
+
+.main-container #offers #form #email {
+    font-size: 1.2rem;
+    height: 2.5rem;
+    min-width: 50%;
+    max-width: 100%;
+    padding: 2px 4px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #000000;
+}
+
+.main-container #offers #form #submit {
+    font-family: var(--ff-sub-heading);
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 2rem 0;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px #000000;
+    color: var(--clr-off-white);
+    background-color: var(--clr-cozy-blue);
+    transition: 0.3s;
+}
+
+.main-container #offers #form #submit:hover {
+    background-color: var(--clr-leaf-green);
+    font-size: 1.05rem;
+    box-shadow: 4px 3px 4px #000000;
+}
+
+footer {
+    background: url("../Images/footer-background-mobile.jpg");
+    height: fit-content;
+}
+
+footer .sources-container {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.55rem;
+    width: fit-content;
     margin: auto;
+    padding: 2px 10px;
+}
+
+footer .sources-container h3 {
+    display: inline;
+    color: #d9d9d9;
+}
+
+footer .sources-container .source {
+    color: #d9d9d9;
+    padding: 0 5px;
+}
+
+footer .sources-container .source:hover {
+    color: var(--clr-cozy-blue);
+}
+
+@media only screen and (min-width: 940px) {
+    :root {
+        font-size: 27px;
+    }
+
+    .nav-bar {
+        width: 70%;
+        margin: auto;
+        padding: 0;
+    }
+
+    .nav-bar .nav-link #header-img {
+        width: 2.3rem;
+    }
+
+    .nav-bar .nav-link {
+        padding: 0.05rem 0.5rem;
+        font-size: 1;
+    }
+
+    .main-container #our-coffee {
+        background: url(/Images/background-2000.png) no-repeat;
+        background-size: cover;
+        display: block;
+    }
+
+    .main-container #our-coffee #our-coffee-div {
+        display: block;
+        position: relative;
+        top: 7.5rem;
+        left: 7%;
+        width: 50%;
+        text-align: left;
+    }
+
+    .main-container #our-coffee #our-coffee-div h1 {
+        min-width: 816px;
+    }
+
+    .main-container #our-coffee #our-coffee-div p {
+        width: 750px;
+        max-width: none;
+        margin: 1rem 0 3rem 0;
+    }
+
+    .main-container #video-container #video {
+        width: 1100px;
+        height: 618px;
+    }
+
+    .main-container #shop, #reviews {
+        width: 100%;
+        padding: 3.5rem 0;
+    }
+
+    .main-container #shop .product-container, 
+    .main-container #reviews .review-container {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        gap: 1.5rem;
+        width: 95%;
+        max-width: 1102px;
+        padding: 0;
+    }
+
+    .main-container #shop .product-container .products,
+    .main-container #reviews .review-container .review {
+        padding: 1rem 0.5rem 1.55rem 0.5rem;
+    }
+
+    .main-container .product-container h3 {
+        min-height: 117px;
+    }
+    
+    .main-container #shop .product-container :first-child h3 {
+        font-size: 1.26rem;
+    }
+
+    @media only screen and (min-width: 1063px) {
+        .main-container #shop .product-container :first-child h3 {
+            font-size: 1.5rem;
+        }
+    }
+    
+    .main-container #offers {
+        background: url("../Images/offers-background-dark.jpg") no-repeat;
+        background-size: cover;
+    }
+
+    .main-container #offers h2 {
+        font-size: 2.2rem;
+        width: 50%;
+    }
+
+    footer {
+        background: url("/Images/footer-background.jpg");
+    }
+    
+    footer .sources-container {
+        padding: 8px 0;
     }
 }
 
-@media(max-width: 1024px) {
-    #header .nav-bar {
-    width: 95%;
+@media only screen and (min-width: 1565px) {
+    .nav-bar {
+        width: 50%;
+    }
+
+    .main-container #shop, #reviews {
+        width: 65%;
     }
 }
 
-@media(max-width: 500px) {
-    #header .nav-bar {
-    width: 98%;
-    }
-
-    #header .nav-bar .nav-link {
-        font-size: 0.7em;
-    }
-
-    #header .nav-bar #header-img {
-        width: 40px;
-    }
-
-    .main-container .our-coffee div {
-        margin-left: 20px;
-        width: 480px;
-    }
-    
-    .main-container .our-coffee h2 {
-        font-weight: 700;
-        font-size: 2em;
-    }
-    
-    .main-container .our-coffee p {
-        font-size: 1em;
-        margin: 15px 0;
-    }
-    
-    .main-container .our-coffee a {
-        font-size: 1.8em;
-        margin-top: 55px;
-    }
-    
-    .main-container .our-coffee a:hover {
-        font-size: 1.95em;
-    }
-}
