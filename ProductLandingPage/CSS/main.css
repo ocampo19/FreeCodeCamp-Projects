@@ -130,7 +130,6 @@ body {
 }
 
 .main-container #video-container {
-    /*max-width: 100%;*/
     background-color: black;
     height: 100vh;
     display: flex;
@@ -195,6 +194,7 @@ body {
 #shop .product-container .products .buy-now-button {
     padding: 1rem 1.5rem;
     margin-top: 2rem;
+    margin-bottom: 0.75rem;
     border: none;
     color: var(--clr-off-white);
     background-color: #c48154;
