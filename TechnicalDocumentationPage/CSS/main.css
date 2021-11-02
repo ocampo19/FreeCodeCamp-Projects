@@ -1,0 +1,16 @@
+:root {
+    font-size: 16px;
+    --clr-background-color: #F6F6F6;
+    --clr-pale-green: #6D9886;
+    --clr-sandy-brown: #ddd2bf;
+    --clr-text-color: #212121;
+}
+
+* {
+    /*margin: 0;
+    padding: 0;*/
+}
+
+#navbar .nav-link {
+    display: block;
+}
