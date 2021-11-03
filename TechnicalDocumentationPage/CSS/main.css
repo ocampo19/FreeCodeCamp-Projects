@@ -1,16 +1,84 @@
 :root {
     font-size: 16px;
-    --clr-background-color: #F6F6F6;
+    --clr-white-color: #F6F6F6;
     --clr-pale-green: #6D9886;
-    --clr-sandy-brown: #ddd2bf;
-    --clr-text-color: #212121;
+    --clr-header-green: #30614c;
+    --clr-dark-green: #214938;
+    --clr-black-color: #212121;
 }
 
 * {
-    /*margin: 0;
-    padding: 0;*/
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--clr-background-color);
+}
+
+#navbar {
+    position: fixed;
+    width: 20%;
+    min-width: 240px;
+    overflow: auto;
+    height: 100vh;
+}
+
+#navbar > * {
+    font-size: 1.25rem;
+    color: var(--clr-black-color);
+    border: thin solid var(--clr-pale-green);
+    padding: 1.062rem;
+    background-color: var(--clr-dark-green);
+    color: var(--clr-white-color)
+}
+
+#navbar header {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--clr-white-color);
+    text-decoration: underline;
 }
 
 #navbar .nav-link {
     display: block;
+    text-decoration: none;
+}
+
+#navbar .nav-link:hover {
+    background-color: var(--clr-black-color);
+}
+
+#main-doc {
+    margin-left: 25%;
+    padding: 1rem 0;
+    width: 65%;
+    color: var(--clr-black-color);
+}
+
+.main-section {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    font-family: 'Hind Madurai', sans-serif;
+}
+
+.main-section header {
+    font-size: 2.5rem;
+    color: var(--clr-header-green);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin: 1rem 0 0.5rem 0;
+}
+
+.main-section code {
+    display: block;
+    background-color: var(--clr-black-color);
+    color: var(--clr-white-color);
+    padding: 2rem;
+    font-family: 'Courier Prime', monospace
+}
+
+.main-section > p, li {
+    line-height: 2rem;
+    margin: 1rem;
 }
