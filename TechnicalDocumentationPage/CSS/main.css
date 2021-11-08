@@ -50,7 +50,7 @@ html, body {
 }
 */
 
-#navbar .menu > * {
+#navbar > * {
     font-size: 1.25rem;
     color: var(--clr-black-color);
     border: thin solid var(--clr-pale-green);
@@ -59,19 +59,19 @@ html, body {
     color: var(--clr-white-color)
 }
 
-#navbar .menu header {
+#navbar header {
     font-size: 2rem;
     font-weight: bold;
     color: var(--clr-white-color);
     text-decoration: underline;
 }
 
-#navbar .menu .nav-link {
+#navbar .nav-link {
     display: block;
     text-decoration: none;
 }
 
-#navbar .menu .nav-link:hover {
+#navbar .nav-link:hover {
     background-color: var(--clr-black-color);
 }
 
