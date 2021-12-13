@@ -1,0 +1,67 @@
+.header {
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-intro {
+    width: 100%;
+    height: 100vh;
+    background: url("../Images/mobile-background.png") no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-video {
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.section-shop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    text-align: center;
+    padding-bottom: 3.5rem;
+}
+
+.section-reviews {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    padding-bottom: 2.5rem;
+}
+
+.section-offers {
+    background: url("../Images/offers-background-mobile-dark.jpg") no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 5%;
+    text-align: center;
+    width: 100%;
+}
+
+.footer {
+    background: url("../Images/footer-background-mobile.jpg");
+    height: fit-content;
+}

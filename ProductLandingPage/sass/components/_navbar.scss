@@ -1,0 +1,30 @@
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    font-family: var($ff-sub-heading);
+
+    &__link {
+        display: block;
+        font-size: 1rem;
+        text-decoration: none;
+        text-align: center;
+        color: var($clr-off-white);
+        transition: 0.3s;
+        padding: 0.8rem 0.5rem;
+
+        &:hover {
+            color: var($clr-coffee-brown);
+        }
+    }
+
+    & > :first-child {
+        padding: 0rem 0.5rem;
+    }
+
+    &__logo {
+        width: 3.5rem;
+        height: auto;
+    }
+}

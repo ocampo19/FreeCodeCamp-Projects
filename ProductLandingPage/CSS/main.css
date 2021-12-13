@@ -21,7 +21,7 @@ body {
     background-color: var(--clr-background);
 }
 
-#header {
+.header {
     background-color: black;
     position: fixed;
     width: 100%;
@@ -59,17 +59,17 @@ body {
     height: auto;
 }
 
-.main-container {
+.main {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.main-container > * {
+.main > * {
     color: var(--clr-off-white);
 }
 
-.main-container #our-coffee {
+.section-intro {
     width: 100%;
     height: 100vh;
     background: url("../Images/mobile-background.png") no-repeat;
@@ -79,7 +79,7 @@ body {
     justify-content: center;
 }
 
-.main-container #our-coffee #our-coffee-div {
+.our-coffee {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -87,7 +87,7 @@ body {
     text-align: center;
 }
 
-.main-container #our-coffee h1 {
+.our-coffee__title {
     font-family: 'Roboto', sans-serif;
     font-size: 4.5rem;
     font-weight: 700;
@@ -96,7 +96,7 @@ body {
     width: 100%;
 }
 
-.main-container #our-coffee p {
+.our-coffee__description {
     font-family: var(--ff-paragraph);
     font-size: 1.2rem;
     font-weight: 400;
@@ -107,7 +107,7 @@ body {
     max-width: 550px;
 }
 
-.main-container #our-coffee #shop-button {
+.btn {
     display: block;
     font-size: 1rem;
     font-family: var(--ff-sub-heading);
@@ -123,13 +123,13 @@ body {
     transition: 0.3s;
 }
 
-.main-container #our-coffee #shop-button:hover {
+.btn:hover {
     background-color: var(--clr-leaf-green);
     font-size: 1.05rem;
     box-shadow: 4px 3px 4px #000000;
 }
 
-.main-container #video-container {
+.section-video {
     background-color: black;
     height: 100vh;
     display: flex;
@@ -139,7 +139,7 @@ body {
     width: 100%;
 }
 
-.main-container #video-container #video {
+.video {
     display: block;
     max-width: 100%;
 }
@@ -452,4 +452,3 @@ footer .sources-container .source:hover {
         width: 65%;
     }
 }
-

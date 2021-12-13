@@ -1,0 +1,17 @@
+*, 
+*::before, 
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    // This defines what 1 rem size is --> 62.5%
+    font-size: 16px;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--clr-background);
+}

@@ -1,0 +1,21 @@
+.btn {
+    display: block;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-family: var(--ff-sub-heading);
+    font-weight: bold;
+    width: fit-content;
+    text-decoration: none;
+    background-color: var(--clr-cozy-blue);
+    color: var(--clr-off-white);
+    border-radius: 8px;
+    //margin-top: 1rem;
+    box-shadow: $shadow-dark;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: var(--clr-leaf-green);
+        transform: scale(1.03rem);
+        box-shadow: $shadow-light;
+    }
+}
