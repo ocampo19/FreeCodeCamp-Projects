@@ -124,9 +124,7 @@ body {
 }
 
 .btn:hover {
-    background-color: var(--clr-leaf-green);
-    font-size: 1.05rem;
-    box-shadow: 4px 3px 4px #000000;
+    
 }
 
 .section-video {
