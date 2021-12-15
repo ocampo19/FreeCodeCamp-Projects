@@ -1,0 +1,21 @@
+.sources {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.55rem;
+    width: fit-content;
+    margin: auto;
+    padding: 2px 10px;
+
+    &__title {
+        display: inline;
+        color: $clr-sources;
+    }
+
+    &__item {
+        color: $clr-sources;
+        padding: 0 5px;
+
+        &:hover {
+            color: $clr-cozy-blue;
+        }
+    }
+}

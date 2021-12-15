@@ -1,0 +1,17 @@
+.review {
+    background-color: $clr-cozy-blue;
+
+    &__name {
+        font-family: $ff-sub-heading;
+        font-size: 1.2rem;
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    &__description {
+        font-family: $ff-paragraph;
+        font-size: 0.9rem;
+        padding-bottom: 1rem;
+        text-align: center;
+    }
+}

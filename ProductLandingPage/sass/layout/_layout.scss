@@ -9,6 +9,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    & > * { color: $clr-off-white; }
 }
 
 .section-intro {
@@ -38,6 +40,17 @@
     width: 90%;
     text-align: center;
     padding-bottom: 3.5rem;
+
+    &__title {
+        font-family: $ff-sub-heading;
+        font-size: 2rem;
+        font-weight: 600;
+        margin-top: 3.5rem;
+        margin-bottom: 3rem;
+        line-height: 3rem;
+        color: $clr-coffee-brown;
+        text-shadow: 2px 1px 1px #985c34;
+    }
 }
 
 .section-reviews {
@@ -47,6 +60,14 @@
     align-items: center;
     width: 90%;
     padding-bottom: 2.5rem;
+
+    &__title {
+        font-family: $ff-sub-heading;
+        font-size: 2.5rem;
+        text-align: center;
+        padding-top: 3.2rem;
+        margin-bottom: 2rem;
+    }
 }
 
 .section-offers {
@@ -59,6 +80,15 @@
     padding: 2rem 5%;
     text-align: center;
     width: 100%;
+
+    &__title {
+        font-family: $ff-sub-heading;
+        font-size: 1.8rem;
+        width: 90%;
+        line-height: 2.5rem;
+        text-shadow: 2px 2px 2px #000000;
+        margin: 1.5rem 0;
+    }
 }
 
 .footer {

@@ -3,19 +3,19 @@
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
-    font-family: var($ff-sub-heading);
+    font-family: $ff-sub-heading;
 
     &__link {
         display: block;
         font-size: 1rem;
         text-decoration: none;
         text-align: center;
-        color: var($clr-off-white);
+        color: $clr-off-white;
         transition: 0.3s;
         padding: 0.8rem 0.5rem;
 
         &:hover {
-            color: var($clr-coffee-brown);
+            color: $clr-coffee-brown;
         }
     }
 

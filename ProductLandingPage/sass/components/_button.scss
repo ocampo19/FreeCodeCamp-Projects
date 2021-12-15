@@ -1,20 +1,20 @@
 .btn {
     display: block;
-    padding: 1rem 2rem;
+    font-family: $ff-sub-heading;
     font-size: 1rem;
-    font-family: var(--ff-sub-heading);
     font-weight: bold;
-    width: fit-content;
+    padding: 1rem 2rem;
+    //width: fit-content;
     text-decoration: none;
-    background-color: var(--clr-cozy-blue);
-    color: var(--clr-off-white);
+    background-color: $clr-cozy-blue;
+    color: $clr-off-white;
     border-radius: 8px;
     //margin-top: 1rem;
     box-shadow: $shadow-dark;
     transition: 0.3s;
 
     &:hover {
-        background-color: var(--clr-leaf-green);
+        background-color: $clr-leaf-green;
         transform: scale(1.03rem);
         box-shadow: $shadow-light;
     }

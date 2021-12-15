@@ -1,0 +1,13 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 3rem;
+    //width: 100%;
+    max-width: 595px;
+}
+
+.col-1-of-3 {
+    flex-basis: 100%;
+    padding: 1rem;
+}
