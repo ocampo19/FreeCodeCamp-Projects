@@ -3,15 +3,20 @@
     font-family: $ff-sub-heading;
     font-size: 1rem;
     font-weight: bold;
-    padding: 1rem 2rem;
+    padding: 1rem 1.8rem;
     //width: fit-content;
     text-decoration: none;
     background-color: $clr-cozy-blue;
     color: $clr-off-white;
     border-radius: 8px;
-    //margin-top: 1rem;
+    margin-top: 1rem;
     box-shadow: $shadow-dark;
     transition: 0.3s;
+
+    &--submit {
+        margin: 2rem auto;
+        border: none;
+    }
 
     &:hover {
         background-color: $clr-leaf-green;

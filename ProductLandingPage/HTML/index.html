@@ -16,14 +16,14 @@
     <body>
         <header class="header">
             <nav class="navbar">
-                <a class="navbar__link" href="#our-coffee" alt="logo"><img class="navbar__logo" src="../Images/logo-3.png"></a>
-                <a class="navbar__link" href="#shop">Shop</a>
-                <a class="navbar__link" href="#reviews">Reviews</a>
-                <a class="navbar__link" href="#offers">Offers</a>
+                <a class="navbar__link" href="#section-intro" alt="logo"><img class="navbar__logo" src="../Images/logo-3.png"></a>
+                <a class="navbar__link" href="#shop-section">Shop</a>
+                <a class="navbar__link" href="#reviews-section">Reviews</a>
+                <a class="navbar__link" href="#offers-section">Offers</a>
             </nav>
         </header>
         <main class="main">
-            <section class="section-intro">
+            <section id="section-intro">
                 <div class="our-coffee">
                     <h1 class="our-coffee__title">Cozy Coffee</h1>
                     <p class="our-coffee__description">Slowly ease into your morning and have a relaxing day with Cozy Coffee. Fresh, premium, great tasting coffee.</p>
@@ -35,7 +35,7 @@
                 src="https://www.youtube.com/embed/z_vjmRdF0e4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                 </iframe>
             </section>
-            <section class="section-shop">
+            <section class="section-shop" id="shop-section">
                 <h2 class="section-shop__title">Enjoy high quality coffee at work and at home</h2>
                 <div class=row>
                     <div class="col-1-of-3 shop">
@@ -56,7 +56,7 @@
                 </div>
             </section>
             <hr style="width: 85%; opacity: 0.3;">
-            <section class="section-reviews">
+            <section class="section-reviews" id="reviews-section">
                 <h2 class="section-reviews__title">Reviews</h2>
                 <div class="row">
                     <div class="col-1-of-3 review">
@@ -73,14 +73,14 @@
                     </div>
                 </div>
             </section>
-            <section class="section-offers">
+            <section class="section-offers" id="offers-section">
                 <h2 class=section-offers__title>Enter your email to receive special offers!</h2>
                 <form class="form" action="https://www.freecodecamp.com/email-submit" target="_blank">
                     <label for="email"></label>
                     <br>
                     <input type="email" id="email" name="email" placeholder="Enter your email">
                     <br>
-                    <input class="btn" type="submit" value="Sign Up">
+                    <input class="btn btn--submit" type="submit" value="Sign Up">
                 </form>
             </section>
         </main>
